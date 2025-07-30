@@ -1,0 +1,5 @@
+- name: Test connection
+  hosts: ubuntu
+  tasks:
+    - name: Ping the Ubuntu node
+      ansible.builtin.ping:
