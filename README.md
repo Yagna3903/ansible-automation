@@ -10,5 +10,5 @@ roles/ - reusable roles(e.g. nginx, docker)
 files/ - static files or templates copied by playbooks
 
 ## Example usage:
-'''bash
-nsible-playbook -i inventories/dev/hosts.ini playbooks/ping.yml
+```bash
+ansible-playbook -i inventories/dev/hosts.ini playbooks/ping.yml
