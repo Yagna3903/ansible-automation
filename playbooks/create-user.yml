@@ -1,0 +1,9 @@
+- name: create a new user called 'ansibleuser'
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: add user ansibleuser
+      ansible.builtin.user:
+        name: ansibleuser
+        state: present
+        shell: /bin/bash
