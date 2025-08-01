@@ -1,0 +1,11 @@
+- name: Copy hello.txt to /home/yagna/ on Ubuntu
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: Copy file to target
+      ansible.builtin.copy:
+        src: ../files/hello.txt
+        dest: /home/yagna3903/hello.txt
+        owner: yagna3903
+        group: yagna3903
+        mode: '0644'
