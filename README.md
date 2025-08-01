@@ -4,11 +4,12 @@ This repository contains my Ansible experiments and reusable playbooks for diffe
 
 ## Repo Structure:
 
-inventories/ - environment-specific inventory files
-playbooks/ - Ansible playbooks for various tasks
-roles/ - reusable roles(e.g. nginx, docker)
-files/ - static files or templates copied by playbooks
+1. inventories/ - environment-specific inventory files
+2. playbooks/ - Ansible playbooks for various tasks
+3. roles/ - reusable roles(e.g. nginx, docker)
+4. files/ - static files or templates copied by playbooks
 
-##Example usage:
-'''bash
-nsible-playbook -i inventories/dev/hosts.ini playbooks/ping.yml
+## Example usage:
+
+```bash
+ansible-playbook -i inventories/dev/hosts.ini playbooks/ping.yml
